@@ -1,20 +1,19 @@
 import { useState } from "react";
 
 interface buttonProps{
-    value: number,
-    symbol: object    
+    value: string
+    icon: object    
 }
 
-export function NumberButton(props: buttonProps){
-    const [value, setValue] = useState(0);
+export function CalculatorButton(props: buttonProps){
 
-    console.log(value);
+    const [value, setValue] = useState("");
 
     return(
         <button className='bg-slate-700 hover:bg-slate-400 rounded-full flex justify-center items-center w-12 h-12'
                 onClick={() => setValue(props.value)}
             >
-                <>{props.symbol}</>
+                <>{props.icon}</>
             </button>
     );
 }

@@ -1,11 +1,16 @@
-import { Calculator } from './Components/Calculator';
+import { Screen } from './Components/Screen';
+import { Keyboard } from './Components/Keyboard';
+import {NumberProvider } from './Contexts/NumberContext';
 
 
 function App() {
   return (
+    <NumberProvider>
     <div className="bg-black h-screen flex flex-col justify-center items-center">
-      <Calculator/>
+      <Screen/>
+      <Keyboard/>
     </div>
+    </NumberProvider>
   )
 }
 
