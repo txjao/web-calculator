@@ -1,8 +1,11 @@
-import { Keyboard } from "./Components/Keyboard"
+import { Calculator } from './Components/Calculator';
+
 
 function App() {
   return (
-    <Keyboard/>
+    <div className="bg-black h-screen flex flex-col justify-center items-center">
+      <Calculator/>
+    </div>
   )
 }
 
